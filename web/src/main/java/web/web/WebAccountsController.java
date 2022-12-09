@@ -48,8 +48,7 @@ public class WebAccountsController {
     }
 
     @RequestMapping("/accounts/{accountNumber}")
-    public String byNumber(Model model,
-                           @PathVariable("accountNumber") String accountNumber) {
+    public String byNumber(Model model, @PathVariable("accountNumber") String accountNumber) {
 
         logger.info("web-service byNumber() invoked: " + accountNumber);
 
